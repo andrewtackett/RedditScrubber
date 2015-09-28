@@ -1,0 +1,10 @@
+c:\users\829356\documents\visual studio 2013\Projects\RedditScrubber\RedditScrubber\bin\Debug\RedditScrubber.exe.config
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\obj\Debug\RedditScrubber.csprojResolveAssemblyReference.cache
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\bin\Debug\RedditScrubber.exe
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\bin\Debug\RedditScrubber.pdb
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\bin\Debug\HtmlAgilityPack.dll
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\bin\Debug\Newtonsoft.Json.dll
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\bin\Debug\RedditSharp.dll
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\bin\Debug\RedditSharp.pdb
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\obj\Debug\RedditScrubber.exe
+C:\Users\829356\Documents\Visual Studio 2013\Projects\RedditScrubber\RedditScrubber\obj\Debug\RedditScrubber.pdb
