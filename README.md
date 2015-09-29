@@ -4,11 +4,11 @@ Quick and dirty program to delete posts and comments from a user's reddit histor
 
 # Usage
 
-The program will look for a file named "creds.txt" in the same directory.  This file should contain your reddit username on the first line and your password on the second.  There are five optional arguments you may pass to the program:
+The program will look for a file named "creds.txt" in the same directory.  This file should contain your reddit username on the first line and your password on the second.  There are five optional arguments you may pass to the program, otherwise it will default to the stated values:
 
 * Cutoff Date - Date string e.g. "09/28/2015", default today
 * Cutoff Karma - integer, default infinite
-* Dryrun - true/false, default true
+* Dryrun - true/false, default false
 * Posts only - true/false, default false
 * Comments only - true/false, default false
 

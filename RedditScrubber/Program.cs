@@ -13,9 +13,27 @@ namespace RedditScrubber
     {
         static void Main(string[] args)
         {
-            string[] creds = File.ReadAllLines("creds.txt");
+            string[] creds;
+            try
+            {
+                creds = File.ReadAllLines("creds.txt");
+            }
+            catch(FileNotFoundException)
+            {
+                Console.WriteLine("Please create a file named creds.txt with your username on the first line and password on the second.");
+                return;
+            }
             var reddit = new Reddit();
-            var user = reddit.LogIn(creds[0], creds[1]);
+            AuthenticatedUser user;
+            try
+            {
+                user = reddit.LogIn(creds[0], creds[1], true);
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Incorrect username/password");
+                return;
+            }
             int limit = 100;
             Listing<RedditSharp.Things.VotableThing> posts = user.GetOverview(Sort.New, limit, FromTime.All);
 
@@ -27,7 +45,7 @@ namespace RedditScrubber
             //Switch, comments only (can't do both)
             DateTime cutoffDate= DateTime.Now;
             int cutoffScore = int.MaxValue;
-            bool dryRun = true;
+            bool dryRun = false;
             bool onlyPosts = false;
             bool onlyComments = false;
 
